@@ -31,8 +31,8 @@
                     <TitleSection
                         :subtitle="text.titleSection.subtitle"
                         :title="text.titleSection.title"
-                        styleVariant="subtitleVariant"
-                        containerVariant="withoutBorder"
+                        style-variant="subtitleVariant"
+                        container-variant="withoutBorder"
                     />
                 </div>
                 <div class="flex flex-col gap-[16px] text-[16px]">

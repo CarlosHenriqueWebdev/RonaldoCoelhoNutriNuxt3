@@ -9,8 +9,8 @@
             <div class="flex flex-col gap-[32px]">
                 <ClientOnly>
                     <nuxt-img
-                        class="h-fit object-contain shadow-image rounded-[4px] w-full"
                         v-lazy="`/assets/images/${service.landscapeImage}`"
+                        class="h-fit object-contain shadow-image rounded-[4px] w-full"
                         :alt="service.title"
                         placeholder
                         loading="lazy"
@@ -28,14 +28,14 @@
                     >
                         <TitleSection
                             title="FAQ (Perguntas Frequentes)"
-                            withoutSpanVariant="withoutSpan"
+                            without-span-variant="withoutSpan"
                         />
                         <ul class="flex flex-col gap-[16px]">
                             <li
                                 v-for="(item, index) in service.faq"
                                 :key="item.question"
-                                @click="toggleAnswer(index)"
                                 class="cursor-pointer flex flex-col gap-[16px] text-lavender-haze bg-[#262931] p-[24px] text-[16px] rounded-[4px] hover:brightness-75"
+                                @click="toggleAnswer(index)"
                             >
                                 <div
                                     class="flex w-full items-center justify-between"
@@ -50,10 +50,10 @@
                                     </h3>
                                     <ClientOnly>
                                         <nuxt-img
-                                            class="h-[12px]"
                                             v-lazy="
                                                 `/assets/images/vector8.svg`
                                             "
+                                            class="h-[12px]"
                                             alt="Logo"
                                             placeholder
                                             loading="lazy"
@@ -85,10 +85,10 @@
                             {{ item.title }}
                             <ClientOnly>
                                 <nuxt-img
-                                    class="h-[12px]"
                                     v-lazy="
                                         `/assets/images/${item.title === service.title ? 'vector11.svg' : 'vector10.svg'}`
                                     "
+                                    class="h-[12px]"
                                     alt="Logo"
                                     placeholder
                                     loading="lazy"
@@ -123,6 +123,11 @@ export default {
             activeIndexes: [],
         };
     },
+    created() {
+        if (this.service.faq.length > 0) {
+            this.activeIndexes.push(0); // Push the index of the first item
+        }
+    },
     methods: {
         toggleAnswer(index) {
             if (this.activeIndexes.includes(index)) {
@@ -133,11 +138,6 @@ export default {
                 this.activeIndexes.push(index);
             }
         },
-    },
-    created() {
-        if (this.service.faq.length > 0) {
-            this.activeIndexes.push(0); // Push the index of the first item
-        }
     },
 };
 </script>

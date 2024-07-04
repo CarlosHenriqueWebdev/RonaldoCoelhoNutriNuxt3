@@ -1,6 +1,6 @@
 <template>
     <div class="mt-[12px]"> 
-        <TitleSection :subtitle="section.subtitle" :title="section.title" styleVariant="subtitleVariant" withoutSpanVariant="withoutSpan" />
+        <TitleSection :subtitle="section.subtitle" :title="section.title" style-variant="subtitleVariant" without-span-variant="withoutSpan" />
     </div>
 </template>
 <script>

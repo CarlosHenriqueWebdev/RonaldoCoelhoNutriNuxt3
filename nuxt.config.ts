@@ -36,8 +36,7 @@ export default defineNuxtConfig({
     },
   },
   devtools: { enabled: true },
-  layout: "default",
-  modules: ["@nuxtjs/tailwindcss", "@nuxt/image"],
+  modules: ["@nuxtjs/tailwindcss", "@nuxt/image", "@nuxt/eslint"],
   image: {
     quality: 100,
   },

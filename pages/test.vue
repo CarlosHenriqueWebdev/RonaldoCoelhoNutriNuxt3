@@ -4,7 +4,7 @@
 			<div class="flex flex-col gap-[16px]">
 				<div class="flex flex-col gap-[8px]">
 					<label for="name" class="block font-bold">
-						Name<span class="text-[#B95757]">*</span>
+						Nome<span class="text-[#B95757]">*</span>
 					</label>
 					<input
 						type="text"
@@ -32,7 +32,7 @@
 				</div>
 				<div class="flex flex-col gap-[8px]">
 					<label for="message" class="block font-bold">
-						Message<span class="text-[#B95757]">*</span>
+						Mensagem<span class="text-[#B95757]">*</span>
 					</label>
 					<textarea
 						id="message"

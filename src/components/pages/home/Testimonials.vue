@@ -7,7 +7,7 @@
                     <span class="text-[14px] text-white-75">{{ item.name }}</span>
                 </div>
             </swiper-slide>
-            <div class="swiper-pagination swiper-pagination-testimonials !justify-start md:!justify-center px-[24px] lg:px-[80px]"></div>
+            <div class="swiper-pagination swiper-pagination-testimonials !justify-start md:!justify-center px-[24px] lg:px-[80px]"/>
         </swiper>
     </div>
 </template>

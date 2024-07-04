@@ -36,7 +36,7 @@
                     </div>
                 </div>
             </swiper-slide>
-            <div class="swiper-pagination"></div>
+            <div class="swiper-pagination"/>
         </swiper>
     </div>
 </template>

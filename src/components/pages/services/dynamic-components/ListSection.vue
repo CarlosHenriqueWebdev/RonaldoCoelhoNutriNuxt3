@@ -7,8 +7,8 @@
         >
             <ClientOnly>
                 <nuxt-img
-                    class="w-[22px] h-[22px]"
                     v-lazy="`/assets/images/vector2.svg`"
+                    class="w-[22px] h-[22px]"
                     alt="Logo"
                     placeholder
                     loading="lazy"

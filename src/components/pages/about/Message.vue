@@ -5,17 +5,17 @@
         >
             <ClientOnly>
                 <nuxt-img
-                    class="w-[126px] h-[126px]"
                     v-lazy="`/assets/images/detail5.png`"
+                    class="w-[126px] h-[126px]"
                     alt="Logo"
                     placeholder
                     loading="lazy"
                 />
             </ClientOnly>
             <TitleAndDescription
-                :titleText="aboutText.title"
-                :descriptionText="aboutText.description"
-                withoutSpanVariant="withoutSpan"
+                :title-text="aboutText.title"
+                :description-text="aboutText.description"
+                without-span-variant="withoutSpan"
             />
         </div>
     </div>

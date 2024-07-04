@@ -38,9 +38,9 @@
                         <div v-else class="relative">
                             <button
                                 ref="dropdownButton"
-                                @click="toggleDropdown(link.name)"
                                 :aria-expanded="isDropdownOpen(link.name)"
                                 class="dropdown-button flex items-center gap-[6px] hover:text-vibrant-green"
+                                @click="toggleDropdown(link.name)"
                             >
                                 {{ link.name }}
                                 <nuxt-img
@@ -60,7 +60,6 @@
                             >
                                 <div
                                     v-if="isDropdownOpen(link.name)"
-                                    class="absolute -left-8 top-full z-10 mt-3 w-screen max-w-[300px] overflow-hidden rounded-[4px] bg-white shadow-lg ring-1 ring-gray-900/5"
                                     :ref="
                                         (el) => {
                                             if (el)
@@ -72,6 +71,7 @@
                                                 ];
                                         }
                                     "
+                                    class="absolute -left-8 top-full z-10 mt-3 w-screen max-w-[300px] overflow-hidden rounded-[4px] bg-white shadow-lg ring-1 ring-gray-900/5"
                                 >
                                     <div ref="dropdownContent">
                                         <div
@@ -114,8 +114,8 @@
         </div>
         <Dialog
             class="lg:hidden"
-            @close="mobileMenuOpen = false"
             :open="mobileMenuOpen"
+            @close="mobileMenuOpen = false"
         >
             <div class="fixed inset-0 z-10" />
             <DialogPanel
@@ -152,11 +152,11 @@
                                 <div v-else class="relative">
                                     <button
                                         ref="dropdownButton"
-                                        @click="toggleDropdown(link.name)"
                                         :aria-expanded="
                                             isDropdownOpen(link.name)
                                         "
                                         class="dropdown-button flex w-full items-center justify-between rounded-[4px] py-[12px] px-[16px] bg-gray-50 hover:bg-gray-100 hover:text-vibrant-green"
+                                        @click="toggleDropdown(link.name)"
                                     >
                                         {{ link.name }}
                                         <nuxt-img

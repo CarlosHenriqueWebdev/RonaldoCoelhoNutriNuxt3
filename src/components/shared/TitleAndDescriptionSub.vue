@@ -1,6 +1,6 @@
 <template>
     <div class="flex flex-col gap-[16px]">
-        <TitleSection :subtitle="subtitleText" :title="titleText" styleVariant="subtitleVariant" />
+        <TitleSection :subtitle="subtitleText" :title="titleText" style-variant="subtitleVariant" />
 
         <div class="flex flex-col gap-[16px] text-[16px]">
             <TextSection :description="descriptionText" />

@@ -18,8 +18,8 @@
             >
                 <ClientOnly>
                     <nuxt-img
-                        class="w-[347px] h-fit object-contain shadow-image rounded-[4px] md:w-full"
                         v-lazy="`/assets/images/${item.image}`"
+                        class="w-[347px] h-fit object-contain shadow-image rounded-[4px] md:w-full"
                         alt="Logo"
                         placeholder
                         loading="lazy"
@@ -42,8 +42,8 @@
                     >
                         <ClientOnly>
                             <nuxt-img
-                                class="w-[40px] h-[40px]"
                                 v-lazy="`/assets/images/vector7.svg`"
+                                class="w-[40px] h-[40px]"
                                 alt="Logo"
                                 placeholder
                                 loading="lazy"

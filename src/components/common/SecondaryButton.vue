@@ -4,7 +4,7 @@
     :href="href"
     :class="buttonClasses"
   >
-    <slot></slot>
+    <slot/>
   </a>
 
 </template>

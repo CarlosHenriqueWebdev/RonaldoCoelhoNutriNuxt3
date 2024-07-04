@@ -86,9 +86,9 @@
             >
                 <li v-for="(link, index) in legalLinks" :key="index">
                     <a
-                        @click="handleLinkClick(link)"
                         target="_blank"
                         class="cursor-pointer hover:underline"
+                        @click="handleLinkClick(link)"
                         >{{ link.name }}</a
                     >
                     <span v-if="index < legalLinks.length - 1"> | </span>
@@ -101,7 +101,7 @@
             <p>{{ copyright.text }} {{ currentYear }}</p>
         </div>
 
-        <Attributions :isVisible="showModal" @close="showModal = false" />
+        <Attributions :is-visible="showModal" @close="showModal = false" />
     </footer>
 </template>
 <script>

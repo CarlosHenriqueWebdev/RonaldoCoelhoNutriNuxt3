@@ -11,9 +11,9 @@
                     class="flex flex-col gap-[24px] relative after:content-[''] after:absolute after:w-[50px] after:h-[50px] after:bg-no-repeat after:bg-contain after:right-0 after:top-[-24px] lg:after:top-[0px] lg:after:w-[120px] lg:after:h-[120px] lg:after:top-[20px] lg:after:right-[-32px] detail5"
                 >
                     <TitleAndDescription
-                        :subtitleText="contact.subtitle"
-                        :titleText="contact.title"
-                        :descriptionText="contact.description"
+                        :subtitle-text="contact.subtitle"
+                        :title-text="contact.title"
+                        :description-text="contact.description"
                     />
                     <form
                         class="flex flex-col gap-[24px]"
@@ -27,12 +27,12 @@
                                     ></label
                                 >
                                 <input
-                                    type="text"
                                     id="name"
                                     v-model="name"
+                                    type="text"
                                     class="w-full bg-frosty-blue px-[16px] py-[12px] border rounded-[4px] focus:outline-none focus:ring placeholder-bg-[#444D55]"
                                     placeholder="Seu Nome"
-                                />
+                                >
                                 <span v-if="errors.name" class="text-red-500">{{
                                     errors.name
                                 }}</span>
@@ -44,12 +44,12 @@
                                     ></label
                                 >
                                 <input
-                                    type="email"
                                     id="email"
                                     v-model="email"
+                                    type="email"
                                     class="w-full bg-frosty-blue px-[16px] py-[12px] border rounded-[4px] focus:outline-none focus:ring placeholder-bg-[#444D55]"
                                     placeholder="Seu Email"
-                                />
+                                >
                                 <span
                                     v-if="errors.email"
                                     class="text-red-500"
@@ -64,11 +64,11 @@
                                 >
                                 <textarea
                                     id="message"
+                                    v-model="message"
                                     class="w-full bg-frosty-blue px-[16px] py-[12px] border rounded-[4px] focus:outline-none focus:ring placeholder-bg-[#444D55]"
                                     rows="4"
-                                    v-model="message"
                                     placeholder="Sua Mensagem"
-                                ></textarea>
+                                />
                                 <span
                                     v-if="errors.message"
                                     class="text-red-500"
@@ -116,8 +116,8 @@
                             >
                                 <ClientOnly>
                                     <nuxt-img
-                                        class="h-[12px]"
                                         v-lazy="`/assets/images/${item.icon}`"
+                                        class="h-[12px]"
                                         alt="Logo"
                                         placeholder
                                         loading="lazy"
@@ -137,6 +137,9 @@
 import Hero from "src/components/common/Hero.vue";
 import TitleAndDescription from "src/components/shared/TitleAndDescription.vue";
 import content from "src/content.json";
+
+import { ref } from "vue";
+import emailjs from "emailjs-com";
 
 export default {
     components: {
@@ -208,9 +211,6 @@ useHead({
 });
 
 const runtimeConfig = useRuntimeConfig();
-
-import { ref } from "vue";
-import emailjs from "emailjs-com";
 
 const name = ref("");
 const email = ref("");

@@ -30,8 +30,8 @@
                     >
                         <ClientOnly>
                             <nuxt-img
-                                class="w-[347px] h-fit object-contain shadow-image rounded-[4px] md:w-full"
                                 v-lazy="`/assets/images/${item.image}`"
+                                class="w-[347px] h-fit object-contain shadow-image rounded-[4px] md:w-full"
                                 alt="Logo"
                                 placeholder
                                 loading="lazy"
@@ -44,9 +44,9 @@
                     class="flex flex-col gap-[16px] md:pt-[16px] lg:pb-[80px]"
                 >
                     <TitleAndDescription
-                        :titleText="item.title"
-                        :descriptionText="item.description"
-                        withoutSpanVariant="withoutSpan"
+                        :title-text="item.title"
+                        :description-text="item.description"
+                        without-span-variant="withoutSpan"
                     />
                 </div>
             </div>

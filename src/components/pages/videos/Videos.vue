@@ -24,7 +24,7 @@
                         class="shadow-image w-full h-[240px] rounded-[4px] block"
                         frameborder="0"
                         allowfullscreen
-                    ></iframe>
+                    />
                 </div>
 
                 <div class="flex flex-col gap-[8px] uppercase font-bold">

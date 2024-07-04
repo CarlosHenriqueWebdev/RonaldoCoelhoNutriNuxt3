@@ -30,8 +30,8 @@
                             {{ item.title }}
                             <ClientOnly>
                                 <nuxt-img
-                                    class="h-[12px]"
                                     v-lazy="`src/assets/images/vector10.svg`"
+                                    class="h-[12px]"
                                     alt="Logo"
                                     placeholder
                                     loading="lazy"
@@ -59,8 +59,8 @@
                             {{ item.title }}
                             <ClientOnly>
                                 <nuxt-img
-                                    class="h-[12px]"
                                     v-lazy="`/assets/images/vector10.svg`"
+                                    class="h-[12px]"
                                     alt="Logo"
                                     placeholder
                                     loading="lazy"

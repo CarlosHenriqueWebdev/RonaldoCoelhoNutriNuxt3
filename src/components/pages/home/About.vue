@@ -27,8 +27,8 @@
             >
                 <ClientOnly>
                     <nuxt-img
-                        class="object-contain h-fit max-w-[320px] md:max-w-full w-full shadow-image rounded-[4px] object-top"
                         v-lazy="`/assets/images/${about.profileImage}`"
+                        class="object-contain h-fit max-w-[320px] md:max-w-full w-full shadow-image rounded-[4px] object-top"
                         alt="Profile Image"
                         placeholder
                         loading="lazy"
@@ -62,9 +62,9 @@
                     class="relative after:content-[''] after:absolute after:w-[90px] after:h-[90px] after:bg-no-repeat after:bg-contain after:right-0 after:top-[60px] lg:after:w-[120px] lg:after:h-[120px] lg:after:top-[0px] lg:after:w-[190px] lg:after:h-[190px] lg:after:top-[0%] lg:after:right-[10%] detail2"
                 >
                     <TitleAndDescription
-                        :subtitleText="about.subtitleText"
-                        :titleText="about.titleText"
-                        :descriptionText="about.descriptionText"
+                        :subtitle-text="about.subtitleText"
+                        :title-text="about.titleText"
+                        :description-text="about.descriptionText"
                     />
                 </div>
                 <PrimaryButton :href="about.buttonUrl">{{

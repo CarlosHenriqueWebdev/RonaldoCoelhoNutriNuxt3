@@ -1,21 +1,21 @@
 <template>
   <div class="text-forest-night">
-    <Header />
+    <AppHeader />
     <main>
-      <slot></slot>
+      <slot />
     </main>
-    <Footer />
+    <AppFooter />
   </div>
 </template>
 
 <script>
-import Header from 'src/components/common/Header.vue';
-import Footer from 'src/components/common/Footer.vue';
+import AppHeader from "src/components/common/Header.vue";
+import AppFooter from "src/components/common/Footer.vue";
 
 export default {
   components: {
-    Header,
-    Footer,
+    AppHeader,
+    AppFooter,
   },
 };
 </script>
