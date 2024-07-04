@@ -9,7 +9,7 @@
             <div class="flex flex-col gap-[32px]">
                 <ClientOnly>
                     <nuxt-img
-                        class="shadow-image object-cover h-[240px] w-full rounded-[4px] lg:h-full"
+                        class="h-fit object-contain shadow-image rounded-[4px] w-full"
                         v-lazy="`/assets/images/${service.landscapeImage}`"
                         :alt="service.title"
                         placeholder
@@ -34,16 +34,16 @@
                             <li
                                 v-for="(item, index) in service.faq"
                                 :key="item.question"
-                                class="cursor-pointer flex flex-col gap-[16px] text-lavender-haze bg-[#262931] p-[24px] text-[16px] rounded-[4px]"
+                                @click="toggleAnswer(index)"
+                                class="cursor-pointer flex flex-col gap-[16px] text-lavender-haze bg-[#262931] p-[24px] text-[16px] rounded-[4px] hover:brightness-75"
                             >
                                 <div
-                                    class="flex w-full items-center justify-between hover:brightness-75"
+                                    class="flex w-full items-center justify-between"
                                     :class="
                                         activeIndexes.includes(index)
                                             ? 'border-solid border-b-[1px] border-misty-sky pb-[8px]'
                                             : ''
                                     "
-                                    @click="toggleAnswer(index)"
                                 >
                                     <h3 class="w-fit uppercase font-bold">
                                         {{ item.question }}

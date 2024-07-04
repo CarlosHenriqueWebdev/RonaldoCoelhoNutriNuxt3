@@ -20,7 +20,7 @@
             >
                 <div class="w-full h-full">
                     <iframe
-                        v-lazy="item.videoEmbeddedURL"
+                        :src="item.videoEmbeddedURL"
                         class="shadow-image w-full h-[240px] rounded-[4px] block"
                         frameborder="0"
                         allowfullscreen

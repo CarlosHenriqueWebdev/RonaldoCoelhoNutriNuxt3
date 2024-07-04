@@ -18,7 +18,7 @@
             >
                 <ClientOnly>
                     <nuxt-img
-                        class="h-[240px] w-full object-cover shadow-image rounded-[4px] lg:h-[260px]"
+                        class="w-[347px] h-fit object-contain shadow-image rounded-[4px] md:w-full"
                         v-lazy="`/assets/images/${item.image}`"
                         alt="Logo"
                         placeholder

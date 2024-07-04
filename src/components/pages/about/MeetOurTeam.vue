@@ -1,6 +1,6 @@
 <template>
     <div
-        class="flex flex-col gap-[32px] px-[24px] lg:px-[80px] mx-auto max-w-[640px] md:max-w-full xl:max-w-[1280px]"
+        class="w-full flex flex-col gap-[32px] px-[24px] lg:px-[80px] mx-auto max-w-[640px] md:max-w-full xl:max-w-[1280px]"
     >
         <div>
             <TitleSection
@@ -14,12 +14,11 @@
             <li
                 v-for="(item, index) in listItems"
                 :key="index"
-                class="flex flex-col gap-[32px]"
+                class="flex flex-col gap-[32px] w-fit md:w-full"
             >
                 <ClientOnly>
                     <nuxt-img
-                        style="object-position: top"
-                        class="w-full h-fit object-cover shadow-image rounded-[4px]"
+                        class="w-[347px] h-fit object-contain shadow-image rounded-[4px] md:w-full"
                         v-lazy="`/assets/images/${item.image}`"
                         alt="Logo"
                         placeholder

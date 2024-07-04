@@ -12,14 +12,12 @@
             class="px-[24px] lg:px-[80px] flex flex-col gap-[32px] md:grid md:grid-cols-[470fr_618fr]"
         >
             <div class="flex md:justify-end h-fit lg:h-full">
-                <div class="w-full shadow-container rounded-[4px] lg:h-full">
+                <div class="shadow-container rounded-[4px] h-fit">
                     <ClientOnly>
                         <nuxt-img
-                            className="lg:h-full w-full h-fit object-contain lg:object-cover shadow-image rounded-[4px]"
-                            v-lazy="`/assets/images/${text.image}`"
+                            class="w-[347px] h-fit object-contain shadow-image rounded-[4px] md:w-full"
+                            :src="`/assets/images/${text.image}`"
                             alt="Logo"
-                            :width="825"
-                            :height="550"
                             placeholder
                             loading="lazy"
                         />

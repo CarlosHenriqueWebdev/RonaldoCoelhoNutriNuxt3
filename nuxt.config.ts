@@ -28,9 +28,16 @@ export default defineNuxtConfig({
       ],
     },
   },
+  runtimeConfig: {
+    public: {
+      SERVICE_ID: process.env.SERVICE_ID,
+      TEMPLATE_ID: process.env.TEMPLATE_ID,
+      USER_ID: process.env.USER_ID,
+    },
+  },
   devtools: { enabled: true },
   layout: "default",
-  modules: ["@nuxtjs/tailwindcss", "@nuxt/image", "nuxt-lazy-hydrate"],
+  modules: ["@nuxtjs/tailwindcss", "@nuxt/image"],
   image: {
     quality: 100,
   },

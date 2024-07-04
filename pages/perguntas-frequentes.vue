@@ -13,16 +13,16 @@
                 <li
                     v-for="(item, index) in listItems"
                     :key="item.question"
-                    class="cursor-pointer flex flex-col gap-[16px] text-lavender-haze bg-[#262931] p-[24px] text-[16px] rounded-[4px]"
+                    @click="toggleAnswer(index)"
+                    class="cursor-pointer flex flex-col gap-[16px] text-lavender-haze bg-[#262931] p-[24px] text-[16px] rounded-[4px] hover:brightness-75"
                 >
                     <div
-                        class="flex w-full items-center justify-between hover:brightness-75"
+                        class="flex w-full items-center justify-between"
                         :class="
                             activeIndexes.includes(index)
                                 ? 'border-solid border-b-[1px] border-misty-sky pb-[8px]'
                                 : ''
                         "
-                        @click="toggleAnswer(index)"
                     >
                         <h3 class="w-fit uppercase font-bold">
                             {{ item.question }}

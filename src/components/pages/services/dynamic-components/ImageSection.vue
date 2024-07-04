@@ -4,7 +4,7 @@
             <nuxt-img
                 v-lazy="`/assets/images/${section.src}`"
                 :alt="section.alt"
-                class="shadow-image w-full object-cover rounded-[4px]"
+                class="h-fit object-contain shadow-image rounded-[4px] w-full"
                 placeholder
                 loading="lazy"
             />
