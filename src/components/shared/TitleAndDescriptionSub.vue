@@ -1,36 +1,40 @@
 <template>
-    <div class="flex flex-col gap-[16px]">
-        <TitleSection :subtitle="subtitleText" :title="titleText" style-variant="subtitleVariant" />
+  <div class="flex flex-col gap-[16px]">
+    <TitleSection
+      :subtitle="subtitleText"
+      :title="titleText"
+      style-variant="subtitleVariant"
+    />
 
-        <div class="flex flex-col gap-[16px] text-[16px]">
-            <TextSection :description="descriptionText" />
-        </div>
+    <div class="flex flex-col gap-[16px] text-[1rem]">
+      <TextSection :description="descriptionText" />
     </div>
+  </div>
 </template>
 
 <script>
-import TitleSection from './TitleSection.vue';
-import TextSection from './TextSection.vue';
+import TitleSection from "./TitleSection.vue";
+import TextSection from "./TextSection.vue";
 
 export default {
-    components: {
-        TitleSection,
-        TextSection,
+  components: {
+    TitleSection,
+    TextSection,
+  },
+  props: {
+    titleText: {
+      type: String,
+      required: true,
     },
-    props: {
-        titleText: {
-            type: String,
-            required: true
-        },
-        subtitleText: {
-            type: String,
-            required: true
-        },
-        descriptionText: {
-            type: String,
-            required: true
-        }
-    }
+    subtitleText: {
+      type: String,
+      required: true,
+    },
+    descriptionText: {
+      type: String,
+      required: true,
+    },
+  },
 };
 </script>
 

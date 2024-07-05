@@ -5,7 +5,7 @@
   >
     <div class="bg-white rounded-lg p-6 max-w-lg w-full mx-4">
       <div class="flex justify-between items-center border-b pb-3">
-        <h2 class="text-[20px] uppercase font-bold">Atribuições</h2>
+        <h2 class="text-[1.25rem] uppercase font-bold">Atribuições</h2>
         <button class="text-gray-500 hover:text-gray-700" @click="closeModal">
           <svg
             xmlns="http://www.w3.org/2000/svg"

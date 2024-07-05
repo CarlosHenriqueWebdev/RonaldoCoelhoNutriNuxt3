@@ -27,10 +27,10 @@ export default {
 
 <style scoped>
 .btn {
- font-size: 16px;
+ font-size: 1rem;
  font-weight: bold;
  padding: 12px 32px;
- background: #43A848;
+ background: #317737;
  color: white;
  text-transform: uppercase;
  border-radius: 4px;
@@ -38,7 +38,7 @@ export default {
 }
 
 .btn:hover {
- background: linear-gradient(90deg, #43A848 0%, #4CB852 100%);
+ background: linear-gradient(90deg, #317737 0%, rgb(79, 201, 85) 100%);
 }
 
 .btn:active {

@@ -19,9 +19,10 @@
           <nuxt-img
             v-lazy="`/assets/images/${item.image}`"
             class="max-w-[320px] md:max-w-full w-full h-fit object-contain shadow-image rounded-[4px]"
-            alt="Logo"
+            :alt="item.title"
             placeholder
             loading="lazy"
+            aria-hidden="true"
           />
         </ClientOnly>
         <div class="flex flex-col gap-[24px] md: py-[16px]">
@@ -47,11 +48,12 @@
                   <nuxt-img
                     v-lazy="`/assets/images/vector2.svg`"
                     class="w-[22px] h-[22px]"
-                    alt="Logo"
+                    alt="Vantagem icone"
                     width="22"
                     height="22"
                     placeholder
                     loading="lazy"
+                    aria-hidden="true"
                   />
                 </ClientOnly>
 

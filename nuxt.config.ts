@@ -6,6 +6,9 @@ export default defineNuxtConfig({
     baseURL: "/",
     head: {
       title: "RonaldoCoelhoNutri - Nutricionista Exemplar",
+      htmlAttrs: {
+        lang: "pt",
+      },
       meta: [
         {
           name: "description",

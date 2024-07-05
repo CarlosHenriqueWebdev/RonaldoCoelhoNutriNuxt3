@@ -4,109 +4,108 @@
 
 /* Import Dancing Script Font */
 @font-face {
-    font-family: "Dancing Script";
-    src: url(/assets/fonts/DancingScript-VariableFont_wght.ttf)
-        format("truetype");
-    font-weight: normal;
+  font-family: "Dancing Script";
+  src: url(/assets/fonts/DancingScript-VariableFont_wght.ttf) format("truetype");
+  font-weight: normal;
 }
 
 @font-face {
-    font-family: "Dancing Script";
-    src: url(/assets/fonts/static/DancingScript-Medium.ttf) format("truetype");
-    font-weight: 500;
+  font-family: "Dancing Script";
+  src: url(/assets/fonts/static/DancingScript-Medium.ttf) format("truetype");
+  font-weight: 500;
 }
 
 /* Import Lato Fonts */
 @font-face {
-    font-family: "Lato";
-    src: url(/assets/fonts/Lato-Black.ttf) format("truetype");
-    font-weight: 900;
-    font-style: normal;
+  font-family: "Lato";
+  src: url(/assets/fonts/Lato-Black.ttf) format("truetype");
+  font-weight: 900;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "Lato";
-    src: url(/assets/fonts/Lato-BlackItalic.ttf) format("truetype");
-    font-weight: 900;
-    font-style: italic;
+  font-family: "Lato";
+  src: url(/assets/fonts/Lato-BlackItalic.ttf) format("truetype");
+  font-weight: 900;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: "Lato";
-    src: url(/assets/fonts/Lato-Bold.ttf) format("truetype");
-    font-weight: 700;
-    font-style: normal;
+  font-family: "Lato";
+  src: url(/assets/fonts/Lato-Bold.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "Lato";
-    src: url(/assets/fonts/Lato-BoldItalic.ttf) format("truetype");
-    font-weight: 700;
-    font-style: italic;
+  font-family: "Lato";
+  src: url(/assets/fonts/Lato-BoldItalic.ttf) format("truetype");
+  font-weight: 700;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: "Lato";
-    src: url(/assets/fonts/Lato-Italic.ttf) format("truetype");
-    font-weight: 400;
-    font-style: italic;
+  font-family: "Lato";
+  src: url(/assets/fonts/Lato-Italic.ttf) format("truetype");
+  font-weight: 400;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: "Lato";
-    src: url(/assets/fonts/Lato-Light.ttf) format("truetype");
-    font-weight: 300;
-    font-style: normal;
+  font-family: "Lato";
+  src: url(/assets/fonts/Lato-Light.ttf) format("truetype");
+  font-weight: 300;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "Lato";
-    src: url(/assets/fonts/Lato-LightItalic.ttf) format("truetype");
-    font-weight: 300;
-    font-style: italic;
+  font-family: "Lato";
+  src: url(/assets/fonts/Lato-LightItalic.ttf) format("truetype");
+  font-weight: 300;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: "Lato";
-    src: url(/assets/fonts/Lato-Regular.ttf) format("truetype");
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Lato";
+  src: url(/assets/fonts/Lato-Regular.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "Lato";
-    src: url(/assets/fonts/lato-medium.woff") format("woff");
-    font-weight: 500;
-    font-style: normal;
+  font-family: "Lato";
+  src: url(/assets/fonts/lato-medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "Lato";
-    src: url(/assets/fonts/Lato-Thin.ttf) format("truetype");
-    font-weight: 100;
-    font-style: normal;
+  font-family: "Lato";
+  src: url(/assets/fonts/Lato-Thin.ttf) format("truetype");
+  font-weight: 100;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "Lato";
-    src: url(/assets/fonts/Lato-ThinItalic.ttf) format("truetype");
-    font-weight: 100;
-    font-style: italic;
+  font-family: "Lato";
+  src: url(/assets/fonts/Lato-ThinItalic.ttf) format("truetype");
+  font-weight: 100;
+  font-style: italic;
 }
 
 * {
-    font-family: "Lato", sans-serif !important;
-    font-size: 1rem;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
+  font-family: "Lato", sans-serif !important;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
 }
 
 p {
-    line-height: 1.6 !important;
+  line-height: 1.6 !important;
 }
 
 html,
@@ -190,12 +189,12 @@ time,
 mark,
 audio,
 video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -210,117 +209,117 @@ hgroup,
 menu,
 nav,
 section {
-    display: block;
+  display: block;
 }
 
 ol,
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 blockquote,
 q {
-    quotes: none;
+  quotes: none;
 }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-    content: "";
-    content: none;
+  content: "";
+  content: none;
 }
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 .detail1::after {
-    background-image: url("/assets/images/detail1.png");
-    opacity: 0.1;
-    z-index: -1;
+  background-image: url("/assets/images/detail1.webp");
+  opacity: 0.1;
+  z-index: -1;
 }
 .detail2::after {
-    background-image: url("/assets/images/detail2.png");
-    opacity: 0.1;
-    z-index: -1;
+  background-image: url("/assets/images/detail2.webp");
+  opacity: 0.1;
+  z-index: -1;
 }
 .detail3::after {
-    background-image: url("/assets/images/detail3.png");
-    opacity: 0.1;
-    z-index: -1;
+  background-image: url("/assets/images/detail3.webp");
+  opacity: 0.1;
+  z-index: -1;
 }
 .detail4::after {
-    background-image: url("/assets/images/detail4.png");
-    opacity: 0.1;
-    z-index: -1;
+  background-image: url("/assets/images/detail4.webp");
+  opacity: 0.1;
+  z-index: -1;
 }
 .detail5::after {
-    background-image: url("/assets/images/detail5.png");
-    opacity: 0.1;
-    z-index: -1;
+  background-image: url("/assets/images/detail5.webp");
+  opacity: 0.1;
+  z-index: -1;
 }
 .detail6::after {
-    background-image: url("/assets/images/detail6.png");
-    opacity: 0.1;
-    z-index: -1;
+  background-image: url("/assets/images/detail6.webp");
+  opacity: 0.1;
+  z-index: -1;
 }
 .detail7::after {
-    background-image: url("/assets/images/detail7.png");
-    opacity: 0.1;
-    z-index: -1;
+  background-image: url("/assets/images/detail7.webp");
+  opacity: 0.1;
+  z-index: -1;
 }
 .detail8::after {
-    background-image: url("/assets/images/detail8.png");
-    opacity: 0.1;
-    z-index: -1;
+  background-image: url("/assets/images/detail8.webp");
+  opacity: 0.1;
+  z-index: -1;
 }
 .detail9::after {
-    background-image: url("/assets/images/detail9.png");
-    opacity: 0.1;
-    z-index: -1;
+  background-image: url("/assets/images/detail9.webp");
+  opacity: 0.1;
+  z-index: -1;
 }
 
 @media (min-width: 768px) {
-    .shadow-container {
-        box-shadow: -10px 10px #171b27;
-        width: calc(100% - 10px);
-        height: calc(100% - 10px);
-    }
+  .shadow-container {
+    box-shadow: -10px 10px #171b27;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+  }
 
-    .slate-container {
-        box-shadow: 10px 10px #262931;
-        width: calc(100% - 10px);
-        height: calc(100% - 10px);
-    }
+  .slate-container {
+    box-shadow: 10px 10px #262931;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+  }
 }
 
 .shadow-image {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.33);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.33);
 }
 
 .swiper-pagination {
-    justify-content: center;
-    bottom: 32px !important;
-    display: flex;
-    gap: 8px;
+  justify-content: center;
+  bottom: 32px !important;
+  display: flex;
+  gap: 8px;
 }
 
 .swiper-pagination .swiper-pagination-bullet {
-    opacity: 1 !important;
-    border-radius: 0;
-    background: transparent !important;
-    border: 2.5px solid #181c18;
-    width: 12px;
-    height: 12px;
-    margin: 0px !important;
+  opacity: 1 !important;
+  border-radius: 0;
+  background: transparent !important;
+  border: 2.5px solid #181c18;
+  width: 12px;
+  height: 12px;
+  margin: 0px !important;
 }
 
 .swiper-pagination .swiper-pagination-bullet-active {
-    border-color: #57b957 !important;
+  border-color: #57b957 !important;
 }
 
 img {
-    color: transparent !important;
+  color: transparent !important;
 }

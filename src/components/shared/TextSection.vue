@@ -1,17 +1,17 @@
 <!-- components/shared/TitleSection.vue -->
 <template>
-    <div class="flex flex-col gap-[16px] text-[16px]">
-        <p>{{ description }}</p>
-    </div>
+  <div class="flex flex-col gap-[16px] text-[1rem]">
+    <p>{{ description }}</p>
+  </div>
 </template>
 <script>
 export default {
-    props: {
-        description: {
-            type: String,
-            required: true
-        }
-    }
+  props: {
+    description: {
+      type: String,
+      required: true,
+    },
+  },
 };
 </script>
 <style scoped>
