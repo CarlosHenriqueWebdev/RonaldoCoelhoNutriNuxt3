@@ -14,7 +14,9 @@
             class="mx-auto max-w-[640px] md:max-w-full xl:max-w-[1280px] flex flex-col gap-[24px] p-[24px]"
           >
             <div class="flex flex-col gap-[16px] font-extrabold">
-              <span class="text-[1.25rem]">{{ items[0].subtitle }}</span>
+              <span class="text-[1.25rem]" aria-hidden="true">{{
+                items[0].subtitle
+              }}</span>
               <h1 class="text-[1.75rem]">{{ items[0].title }}</h1>
               <p class="text-[1rem]">{{ items[0].description }}</p>
             </div>
@@ -58,7 +60,10 @@
           </div>
         </div>
       </swiper-slide>
-      <div class="swiper-pagination" />
+      <div
+        class="swiper-pagination"
+        aria-label="Ignore este botão se estiver utilizando leitor de tela."
+      />
     </swiper>
   </div>
 </template>

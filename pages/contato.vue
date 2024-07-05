@@ -8,11 +8,13 @@
         <div
           class="flex flex-col gap-[24px] relative after:content-[''] after:absolute after:w-[50px] after:h-[50px] after:bg-no-repeat after:bg-contain after:right-0 after:top-[-24px] lg:after:w-[120px] lg:after:h-[120px] lg:after:top-[20px] lg:after:right-[-32px] detail5"
         >
-          <TitleAndDescription
-            :subtitle-text="contact.subtitle"
-            :title-text="contact.title"
-            :description-text="contact.description"
-          />
+          <div id="main-content">
+            <TitleAndDescription
+              :subtitle-text="contact.subtitle"
+              :title-text="contact.title"
+              :description-text="contact.description"
+            />
+          </div>
           <form class="flex flex-col gap-[24px]" @submit.prevent="submitForm">
             <div class="flex flex-col gap-[16px]">
               <div class="flex flex-col gap-[8px]">
@@ -25,10 +27,18 @@
                   type="text"
                   class="w-full bg-frosty-blue px-[16px] py-[12px] border rounded-[4px] focus:outline-none focus:ring placeholder-bg-[#444D55]"
                   placeholder="Seu Nome"
+                  aria-live="assertive"
+                  aria-required="true"
+                  :aria-invalid="errors.name ? true : false"
+                  aria-describedby="errors-name"
                 />
-                <span v-if="errors.name" class="text-red-500">{{
-                  errors.name
-                }}</span>
+                <span
+                  v-if="errors.name"
+                  id="errors-name"
+                  role="alert"
+                  class="text-red-500"
+                  >{{ errors.name }}</span
+                >
               </div>
               <div class="flex flex-col gap-[8px]">
                 <label for="email" class="block font-bold"
@@ -40,10 +50,18 @@
                   type="email"
                   class="w-full bg-frosty-blue px-[16px] py-[12px] border rounded-[4px] focus:outline-none focus:ring placeholder-bg-[#444D55]"
                   placeholder="Seu Email"
+                  aria-live="assertive"
+                  aria-required="true"
+                  :aria-invalid="errors.email ? true : false"
+                  aria-describedby="errors-email"
                 />
-                <span v-if="errors.email" class="text-red-500">{{
-                  errors.email
-                }}</span>
+                <span
+                  v-if="errors.email"
+                  id="errors-email"
+                  role="alert"
+                  class="text-red-500"
+                  >{{ errors.email }}</span
+                >
               </div>
               <div class="flex flex-col gap-[8px]">
                 <label for="message" class="block font-bold"
@@ -55,10 +73,18 @@
                   class="w-full bg-frosty-blue px-[16px] py-[12px] border rounded-[4px] focus:outline-none focus:ring placeholder-bg-[#444D55]"
                   rows="4"
                   placeholder="Sua Mensagem"
+                  aria-live="assertive"
+                  aria-required="true"
+                  :aria-invalid="errors.message ? true : false"
+                  aria-describedby="errors-message"
                 />
-                <span v-if="errors.message" class="text-red-500">{{
-                  errors.message
-                }}</span>
+                <span
+                  v-if="errors.message"
+                  id="errors-message"
+                  role="alert"
+                  class="text-red-500"
+                  >{{ errors.message }}</span
+                >
               </div>
             </div>
             <div class="flex flex-col gap-[12px]">
@@ -66,6 +92,7 @@
 
               <span
                 v-if="status.message"
+                role="alert"
                 :class="status.success ? 'text-green-500' : 'text-red-500'"
                 >{{ status.message }}</span
               >
@@ -231,7 +258,7 @@ const submitForm = async () => {
       runtimeConfig.public.SERVICE_ID,
       runtimeConfig.public.TEMPLATE_ID,
       templateParams,
-      runtimeConfig.public.USER_ID
+      runtimeConfig.public.USER_ID,
     );
     status.value = { success: true, message: "Email enviado com sucesso!" };
     name.value = "";

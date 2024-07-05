@@ -3,6 +3,7 @@
     class="flex flex-col gap-[32px] px-[24px] lg:px-[80px] mx-auto max-w-[640px] md:max-w-full xl:max-w-[1280px] w-full"
   >
     <div
+      id="main-content"
       class="relative after:content-[''] after:absolute after:w-[80px] after:h-[80px] after:bg-no-repeat after:bg-contain after:right-0 after:top-[-24px] lg:after:w-[205px] lg:after:h-[205px] lg:after:top-[-50px] lg:after:right-[-50px] detail9"
     >
       <TitleSection :subtitle="videosText.subtitle" :title="videosText.title" />

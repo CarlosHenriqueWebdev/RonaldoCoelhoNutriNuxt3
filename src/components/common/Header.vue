@@ -7,8 +7,17 @@
         class="flex items-center justify-between px-[24px] py-[24px] lg:px-[80px]"
         aria-label="Global"
       >
+        <a
+          class="skip-to-content"
+          href="#main-content"
+          tabIndex="0"
+          @click="handleButtonClick('main-content')"
+        >
+          Pular para o conteúdo principal
+        </a>
+
         <div class="flex lg:flex-1">
-          <a href="/" class="h-[24px] block">
+          <a href="/" class="h-[24px] block" aria-label="Inicio">
             <nuxt-img
               class="h-full"
               src="/assets/images/logo.webp"
@@ -109,7 +118,7 @@
         class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-[24px] py-[24px] sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
       >
         <div class="flex items-center justify-between">
-          <a href="/" class="h-[24px] block">
+          <a href="/" class="h-[24px] block" aria-label="Inicio">
             <nuxt-img
               class="h-full"
               src="/assets/images/logo.webp"
@@ -123,7 +132,7 @@
             class="rounded-[4px] p-2.5"
             @click="mobileMenuOpen = false"
           >
-            <span class="sr-only">Close menu</span>
+            <span class="sr-only">Fehar menu</span>
             <XMarkIcon class="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
@@ -233,6 +242,17 @@ const handleClickOutside = (event) => {
     if (!event.target.closest(".dropdown-button") && isClickOutsideDropdown) {
       openDropdown.value = null;
     }
+  }
+};
+
+const handleButtonClick = (targetId) => {
+  const targetElement = document.getElementById(targetId);
+
+  if (targetElement) {
+    setTimeout(() => {
+      targetElement.tabIndex = -1;
+      targetElement.focus();
+    }, 100);
   }
 };
 

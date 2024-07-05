@@ -2,7 +2,9 @@
   <div
     class="flex flex-col gap-[32px] px-[24px] lg:px-[80px] mx-auto max-w-[640px] md:max-w-full xl:max-w-[1280px]"
   >
-    <TitleSection :subtitle="service.subtitle" :title="service.title" />
+    <div id="main-content">
+      <TitleSection :subtitle="service.subtitle" :title="service.title" />
+    </div>
     <div class="flex flex-col gap-[32px] md:grid md:grid-cols-[686fr_402fr]">
       <div class="flex flex-col gap-[32px]">
         <ClientOnly>
@@ -34,6 +36,7 @@
                 v-for="(item, index) in service.faq"
                 :key="item.question"
                 class="cursor-pointer flex flex-col gap-[16px] text-lavender-haze bg-[#262931] p-[24px] text-[1rem] rounded-[4px] hover:brightness-75"
+                tabindex="0"
                 @click="toggleAnswer(index)"
               >
                 <div
@@ -44,7 +47,13 @@
                       : ''
                   "
                 >
-                  <h3 class="w-fit uppercase font-bold">
+                  <h3
+                    :aria-expanded="
+                      activeIndexes.includes(index) ? 'true' : 'false'
+                    "
+                    role="button"
+                    class="w-fit uppercase font-bold"
+                  >
                     {{ item.question }}
                   </h3>
                   <ClientOnly>

@@ -1,12 +1,8 @@
 <!-- src/components/common/Button.vue -->
 <template>
-  <a
-    :href="href"
-    :class="buttonClasses"
-  >
-    <slot/>
+  <a :href="href" :class="buttonClasses">
+    <slot />
   </a>
-
 </template>
 
 <script>
@@ -18,8 +14,7 @@ export default {
     },
     buttonClasses: {
       type: String,
-      default:
-        "btn w-fit",
+      default: "btn w-fit",
     },
   },
 };
@@ -27,21 +22,21 @@ export default {
 
 <style scoped>
 .btn {
- font-size: 1rem;
- font-weight: bold;
- padding: 12px 32px;
- background: #317737;
- color: white;
- text-transform: uppercase;
- border-radius: 4px;
- cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 12px 32px;
+  background: #317737;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .btn:hover {
- background: linear-gradient(90deg, #317737 0%, rgb(79, 201, 85) 100%);
+  background: linear-gradient(90deg, #317737 0%, #37843e 100%);
 }
 
 .btn:active {
- transform: translate(0em, 0.2em);
+  transform: translate(0em, 0.2em);
 }
 </style>

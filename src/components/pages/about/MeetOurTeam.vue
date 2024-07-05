@@ -38,6 +38,7 @@
             :href="item.socialLink"
             target="_blank"
             class="block hover:brightness-75"
+            :aria-label="`Ver informações sobre ${item.name} em outra janela`"
           >
             <ClientOnly>
               <nuxt-img

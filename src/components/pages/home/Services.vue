@@ -26,10 +26,11 @@
           />
         </ClientOnly>
         <div class="flex flex-col gap-[24px] md: py-[16px]">
-          <TitleAndDescriptionSub
+          <TitleAndDescription
             :subtitle-text="item.subtitle"
             :title-text="item.title"
             :description-text="item.description"
+            style-variant="subtitleVariant"
           />
           <div class="flex flex-col gap-[32px]">
             <ul
@@ -71,14 +72,14 @@
 </template>
 <script>
 import TitleSection from "src/components/shared/TitleSection.vue";
-import TitleAndDescriptionSub from "src/components/shared/TitleAndDescriptionSub.vue";
+import TitleAndDescription from "src/components/shared/TitleAndDescription.vue";
 import content from "src/content.json";
 import SecondaryButton from "src/components/common/SecondaryButton.vue";
 
 export default {
   components: {
     TitleSection,
-    TitleAndDescriptionSub,
+    TitleAndDescription,
     SecondaryButton,
   },
   data() {

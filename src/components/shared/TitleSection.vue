@@ -1,6 +1,6 @@
 <template>
   <div :class="containerClass">
-    <span :class="subtitleClass">{{ subtitle }}</span>
+    <span :class="subtitleClass" aria-hidden="true">{{ subtitle }}</span>
     <component :is="titleTag" :class="titleClass">{{ title }}</component>
   </div>
 </template>
@@ -42,8 +42,8 @@ export default {
       return this.withoutSpanVariant === "withoutSpan"
         ? "hidden"
         : this.styleVariant === "subtitleVariant"
-        ? "text-[1rem] text-detail-color font-medium !font-accent uppercase"
-        : "text-[1.125rem] text-detail-color font-medium !font-accent uppercase";
+          ? "text-[1rem] text-detail-color font-medium !font-accent uppercase"
+          : "text-[1.125rem] text-detail-color font-medium !font-accent uppercase";
     },
     containerClass() {
       return this.containerVariant === "withoutBorder"

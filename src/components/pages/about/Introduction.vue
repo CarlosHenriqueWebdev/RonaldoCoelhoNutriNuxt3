@@ -24,6 +24,7 @@
       </div>
       <div class="flex flex-col gap-[16px] md:pt-[16px]">
         <div
+          id="main-content"
           class="relative after:content-[''] after:absolute after:w-[150px] after:h-[150px] after:bg-no-repeat after:bg-contain after:right-0 after:top-[60px] lg:after:w-[365px] lg:after:h-[365px] lg:after:top-[50%] lg:after:right-[10%] detail4"
         >
           <TitleSection

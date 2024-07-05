@@ -20,6 +20,7 @@
       </swiper-slide>
       <div
         class="swiper-pagination swiper-pagination-testimonials !justify-start md:!justify-center px-[24px] lg:px-[80px]"
+        ria-label="Ignore este botão se estiver utilizando leitor de tela."
       />
     </swiper>
   </div>
